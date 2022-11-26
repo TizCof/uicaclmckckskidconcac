@@ -136,6 +136,7 @@ function GetaUI:Window(Title,KeyUIHide)
     LeftTitle.BackgroundTransparency = 1.000
     LeftTitle.Size = UDim2.new(0, 185, 0, 35)
     LeftTitle.Font = Enum.Font.Gotham
+    LeftTitle.TextScaled = true
     LeftTitle.RichText = true
     LeftTitle.TextYAlignment = Enum.TextYAlignment.Top
     LeftTitle.LineHeight = 1
