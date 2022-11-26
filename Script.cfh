@@ -137,7 +137,6 @@ function GetaUI:Window(Title,KeyUIHide)
     LeftTitle.Size = UDim2.new(0, 185, 0, 35)
     LeftTitle.Font = Enum.Font.Gotham
     LeftTitle.RichText = true
-    LeftTitle.TextScaled = true
     LeftTitle.TextYAlignment = Enum.TextYAlignment.Top
     LeftTitle.LineHeight = 1
     LeftTitle.Text = Title
@@ -1022,17 +1021,18 @@ function GetaUI:Window(Title,KeyUIHide)
 				local Item = Instance.new("TextButton")
 				local ItemCorner = Instance.new("UICorner")
 
-				Item.Name = "Item"
-				Item.Parent = DropItemHolder
-				Item.BackgroundColor3 = Color3.fromRGB(64, 68, 75)
-				Item.ClipsDescendants = true
+                Item.Name = "Item"
+                Item.Parent = DropItemHolder
+                Item.BackgroundColor3 = Color3.fromRGB(64, 68, 75)
+                Item.ClipsDescendants = true
+                Item.BackgroundTransparency = 1
+                Item.Size = UDim2.new(1, -1, 0, 25)
+                Item.AutoButtonColor = false
                 Item.Position = UDim2.new(0, 5, 0, 5)
-				Item.Size = UDim2.new(2, -1, 0, 25)
-				Item.AutoButtonColor = false
-				Item.Font = Enum.Font.Gotham
-				Item.Text = addtext
-				Item.TextColor3 = Color3.fromRGB(195, 195, 195)
-				Item.TextSize = 15.000
+                Item.Font = Enum.Font.Gotham
+                Item.Text = addtext
+                Item.TextColor3 = Color3.fromRGB(195, 195, 195)
+                Item.TextSize = 15.000
 
 				ItemCorner.CornerRadius = UDim.new(0, 4)
 				ItemCorner.Name = "ItemCorner"
