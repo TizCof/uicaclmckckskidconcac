@@ -438,6 +438,11 @@ function GetaUI:Window(Title,KeyUIHide)
             TitleLabel.Text = tostring(Text) or 'Nil Text'
             TitleLabel.TextColor3 = Color3.fromRGB(195, 195, 195)
             TitleLabel.TextSize = 22.000
+            local labelfuncs = {}
+            function labelfuncs:Set(text2)
+                TitleLabel.Text = tostring(text2) or 'Nil Text'
+            end
+            return labelfuncs
         end
         function TabFunctions:Button(Title,CallBack)
             local GetButtonTitle = Title or 'Nil Button'
